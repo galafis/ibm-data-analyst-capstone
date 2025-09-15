@@ -25,3 +25,4 @@ class DataQualityChecker:
             rules: lista de regras (strings) a serem aplicadas
         """
         return "Função de validação ainda não implementada."
+
