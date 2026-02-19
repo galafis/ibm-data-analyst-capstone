@@ -8,21 +8,23 @@ from src.utils.data_quality import DataQualityChecker
 
 checker = DataQualityChecker()
 quality_report = checker.validate_dataset(data, rules=['no_nulls', 'valid_dates', 'positive_amounts'])
-print(quality_report)
 
-Desenvolva as funções e classes conforme a necessidade do seu projeto.
-"""
 
-class DataQualityChecker:
-    def __init__(self):
-        pass
+if __name__ == '__main__':
+    print(quality_report)
 
-    def validate_dataset(self, data, rules=None):
-        """
-        Realiza validações básicas no dataset.
-        Parâmetros:
-            data: dataset (ex: DataFrame)
-            rules: lista de regras (strings) a serem aplicadas
-        """
-        return "Função de validação ainda não implementada."
+    Desenvolva as funções e classes conforme a necessidade do seu projeto.
+    """
 
+    class DataQualityChecker:
+        def __init__(self):
+            pass
+
+        def validate_dataset(self, data, rules=None):
+            """
+            Realiza validações básicas no dataset.
+            Parâmetros:
+                data: dataset (ex: DataFrame)
+                rules: lista de regras (strings) a serem aplicadas
+            """
+            return "Função de validação ainda não implementada."
