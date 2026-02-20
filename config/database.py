@@ -48,7 +48,7 @@ DATABASE_CONFIGS = {
         port=int(os.getenv('PROD_DB_PORT', '5432')),
         database=os.getenv('PROD_DB_NAME', 'analytics_prod'),
         username=os.getenv('PROD_DB_USER', 'prod_analyst'),
-        password=os.getenv('PROD_DB_PASSWORD', 'secure_prod_password'),
+        password=os.getenv('PROD_DB_PASSWORD', ''),
         driver='postgresql'
     ),
     
@@ -56,8 +56,8 @@ DATABASE_CONFIGS = {
         host='localhost',
         port=5433,
         database='analytics_test',
-        username='test_user',
-        password='test_password',
+        username=os.getenv('TEST_DB_USER', 'test_user'),
+        password=os.getenv('TEST_DB_PASSWORD', ''),
         driver='postgresql'
     ),
     
@@ -66,7 +66,7 @@ DATABASE_CONFIGS = {
         port=int(os.getenv('SQL_SERVER_PORT', '1433')),
         database=os.getenv('SQL_SERVER_DB', 'Analytics'),
         username=os.getenv('SQL_SERVER_USER', 'sa'),
-        password=os.getenv('SQL_SERVER_PASSWORD', 'SqlServerPass123'),
+        password=os.getenv('SQL_SERVER_PASSWORD', ''),
         driver='sqlserver'
     ),
     
